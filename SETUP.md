@@ -44,7 +44,8 @@ The same read-only tools are exposed through the Atlassian MCP server (`rovo:mcp
 
 ## 5. Optional: worker reports from the JSM portal
 
-1. In **Setup → Worker reports (JSM portal)**, pick a service project and press **Create "Report a near miss"**.
+1. In **Setup → Worker reports (JSM portal)**, pick a service project and press **Create "Report a near miss"** (or pick an existing request type and press **Use this request type**).
+   Jira creates new request types hidden from the portal: in that service space, open **Space settings → Request types** and add "Report a near miss" to a portal group. For anonymous reporting, also allow it in the site's help center permissions and set the space's customer permissions to open.
 2. Open the request type link shown there (or a zone poster link such as `...?zone=B7`). The form shows a tap-to-locate floor plan, also for customers and anonymous users if your portal allows them.
 3. Submit. The request gets a thank-you comment and the report appears on the radar as a person-reported close call.
 
